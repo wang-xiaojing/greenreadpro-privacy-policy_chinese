@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私政策 - GreenRead Pro</title>
+    <style>
+        body {
+            font-family: -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 24px 16px 80px;
+            background: #fafbfc;
+        }
+        h1 {
+            font-size: 1.6em;
+            border-bottom: 2px solid #2E8B57;
+            padding-bottom: 12px;
+            margin-bottom: 24px;
+        }
+        h2 {
+            font-size: 1.2em;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            color: #2c3e50;
+        }
+        h3 {
+            font-size: 1.0em;
+            margin-top: 24px;
+            margin-bottom: 8px;
+        }
+        p, li {
+            font-size: 0.95em;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        .last-updated {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 32px;
+        }
+        .app-icon {
+            text-align: center;
+            margin: 24px 0 8px;
+        }
+        .app-icon img {
+            width: 100px;
+            height: 100px;
+            border-radius: 22px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .app-icon .app-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-top: 12px;
+        }
+        .app-icon .app-desc {
+            color: #888;
+            font-size: 0.9em;
+        }
+        .note-box {
+            background: #eef7f1;
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin: 16px 0;
+            font-size: 0.9em;
+        }
+        .note-box strong {
+            color: #1f6f43;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 32px 0;
+        }
+        address {
+            font-style: normal;
+            background: #f5f7fa;
+            padding: 16px;
+            border-radius: 8px;
+            margin-top: 16px;
+        }
+        a {
+            color: #2E8B57;
+        }
+    </style>
+</head>
+<body>
+
+<div class="app-icon">
+    <img src="GreenReadPro_Icon.jpg" alt="GreenRead Pro 图标" onerror="this.style.display='none'">
+    <div class="app-name">GreenRead Pro</div>
+    <div class="app-desc">GreenRead Pro - 高尔夫果岭坡度测量应用</div>
+</div>
+
+<h1>隐私政策</h1>
+
+<p class="last-updated">最后更新日期：2026年9月21日</p>
+
+<p>
+“GreenRead Pro”（以下简称“本应用”）尊重用户隐私并致力于保护个人信息。
+本隐私政策说明用户在使用本应用时涉及的信息类型、使用方式以及信息保护方式。
+请在使用本应用前仔细阅读以下内容。
+</p>
+
+<h2>1. 采集的信息及使用目的</h2>
+
+<h3>1.1 来自相机、LiDAR 与传感器的信息</h3>
+<p>
+为了测量高尔夫果岭的坡度、距离、高低差与 Break（弯曲），本应用会在设备端采集并使用以下信息：
+</p>
+<ul>
+    <li><strong>相机画面</strong>：使用设备相机画面（ARKit / RealityKit 的 AR 空间）进行距离、坡度测量，并将测量结果叠加显示在画面上。</li>
+    <li><strong>LiDAR 深度图</strong>：使用 LiDAR 扫描仪获取的深度信息（Scene Depth）估算果岭 3D 形态、高低差与坡度。</li>
+    <li><strong>设备姿态与运动信息</strong>：使用 CoreMotion 与 ARKit 获取的设备倾角（X 轴、Y 轴）及相机姿态，用于姿态仪表显示、姿态引导与测量值修正。</li>
+    <li><strong>AR 追踪信息</strong>：使用 ARKit 生成的世界坐标与追踪状态，计算已放置球位与旗位的位置关系及测量值。</li>
+</ul>
+<div class="note-box">
+    <strong>全部在设备本地处理：</strong>
+    上述画面、深度与传感器信息均在设备端实时处理，
+    不会以照片或视频形式保存到设备，也不会发送到外部服务器。
+</div>
+
+<h3>1.2 在应用内创建和保存的信息</h3>
+<ul>
+    <li><strong>各项设置值</strong>：如距离单位、深度平均核、Break 中间计算点数、定位圆设置、左手模式、果岭速度、字体大小、显示布局、线路颜色、设备姿态仪表显示设置等</li>
+    <li><strong>使用状态信息</strong>：首次启动同意状态、体验期累计使用时长</li>
+    <li><strong>体验期首次启动时间</strong>：免费体验开始时间（为防止通过重装重置体验期，保存于 Keychain）</li>
+    <li><strong>设置备份</strong>：用户手动导出的设置数据（JSON 文件）；保存位置由用户自行选择</li>
+</ul>
+
+<h3>1.3 与购买相关的信息</h3>
+<ul>
+    <li>通过 App Store（StoreKit）获取的购买状态（是否购买全功能版）。该状态也会保存在设备内，用于启动时展示。</li>
+</ul>
+<p>※ 与支付相关的信息（如银行卡号）由 Apple 管理，本应用不会保存。</p>
+
+<h3>1.4 与广告相关的信息</h3>
+<ul>
+    <li>未购买时，本应用会在各页面顶部显示横幅广告。广告投放使用 Google 提供的 Google Mobile Ads SDK（AdMob）。</li>
+    <li>广告服务提供方（Google）可能会为广告投放、防作弊与效果衡量，采集设备类型、OS 版本、语言、IP 地址以及广告展示和操作相关信息。</li>
+    <li>本应用不会请求跨 App / 网站追踪权限（App Tracking Transparency），且不使用广告标识符（IDFA）用于广告目的。</li>
+    <li>广告信息处理详情请参阅 Google 隐私政策：
+        <a href="https://policies.google.com/privacy?hl=zh-CN" target="_blank" rel="noopener">https://policies.google.com/privacy?hl=zh-CN</a></li>
+</ul>
+
+<h2>2. 信息使用目的</h2>
+<p>本应用会将采集的信息用于以下目的：</p>
+<ul>
+    <li>通过相机画面与 LiDAR 深度信息进行实时处理，计算距离、高低差、坡度与 Break</li>
+    <li>显示球位、旗位、基准线、瞄准线、滚动线路、坡度方向箭头等界面元素</li>
+    <li>通过设备姿态仪表与姿态引导辅助测量</li>
+    <li>保存并应用测量与显示相关设置值</li>
+    <li>设置数据的备份（导出）与恢复</li>
+    <li>购买状态确认、恢复以及免费体验期管理</li>
+    <li>未购买状态下的横幅广告投放</li>
+</ul>
+<p>※ 本应用不会将测量数据自行用于广告投放或营销目的。</p>
+
+<h2>3. 数据保存位置与保留</h2>
+<ul>
+    <li>用于测量的相机画面、LiDAR 深度信息与传感器信息仅在设备端实时处理，不会保存。</li>
+    <li>各项设置值与体验期累计时长仅通过 Apple 提供的机制（UserDefaults）保存在本机。</li>
+    <li>体验期首次启动时间保存在本机 Keychain。</li>
+    <li>设置备份仅在用户明确操作时，导出到用户选择的位置，格式为 JSON 文件。</li>
+    <li>除广告投放所需通信外，本应用不会将用户测量数据或设置数据发送、存储到外部服务器。</li>
+    <li>卸载本应用后，本机内设置数据等会被删除。但体验期首次启动时间（Keychain）会保留，用于防止通过重装重置体验期。</li>
+    <li>用户可通过设置界面的“恢复默认设置”随时将设置恢复到初始状态。</li>
+</ul>
+
+<h2>4. 向第三方提供</h2>
+<p>除法律法规要求外，本应用不会向第三方出售、出租或提供用户信息。</p>
+<p>但本应用使用以下外部服务，信息可能按各服务提供方规则进行处理：</p>
+<ul>
+    <li><strong>Apple（StoreKit）</strong>：购买处理、购买状态确认与恢复通过 Apple StoreKit 完成。</li>
+    <li><strong>Google（Google Mobile Ads SDK / AdMob）</strong>：横幅广告通过 Google 广告服务投放。</li>
+</ul>
+<p>※ 本应用无法独立控制上述服务提供方接收信息的范围与保留期限。详情请参阅各方隐私说明。</p>
+<p>※ 在设备本地处理的测量数据（相机画面、LiDAR 深度信息、传感器信息）不会提供给第三方。</p>
+
+<h2>5. 信息保护</h2>
+<p>本应用为防止信息泄露、丢失或损坏，采取如下措施：</p>
+<ul>
+    <li>与测量相关的画面、深度与传感器信息仅在本机处理，不保存、不外传</li>
+    <li>设置数据等保存在 iOS 应用沙盒内，限制其他应用访问</li>
+    <li>体验期首次启动时间保存在 Keychain</li>
+    <li>外部通信仅限广告投放，并通过 Apple、Google 提供机制完成</li>
+</ul>
+
+<h2>6. 用户选择（Opt-in / Opt-out）</h2>
+<ul>
+    <li>相机权限可通过 iOS 系统设置随时允许或拒绝。拒绝后将无法使用本应用测量功能。</li>
+    <li>测量与显示相关设置可在应用内设置界面随时调整。</li>
+    <li>设置备份（导出 / 恢复）属于可选操作，不执行也可使用测量功能。</li>
+    <li>横幅广告可通过购买全功能版隐藏。即使不购买，仍可使用功能受限体验版的测量功能。</li>
+</ul>
+
+<h2>7. 儿童隐私</h2>
+<p>本应用不以主动收集 13 岁以下未成年人个人信息为目的。未成年人使用本应用时，请在监护人同意与指导下进行。</p>
+
+<h2>8. 免责声明</h2>
+<ul>
+    <li>本应用是用于把握果岭坡度趋势的测量辅助工具，不提供医学建议或比赛决策建议。</li>
+    <li>本应用显示的坡度值、距离、高低差与 Break 会受 LiDAR 传感器性能、直射阳光、草坪湿度、测量距离、设备姿态、手部抖动等因素影响而产生误差，仅供参考，不保证绝对准确。</li>
+    <li>本应用需要配备 LiDAR 扫描仪的设备（iPhone 12 Pro 及以上、iPad Pro）。</li>
+    <li>比赛规则或本地规则可能限制回合中电子设备使用。请务必提前确认正式比赛中的可用性。</li>
+    <li>基于显示结果做出的判断由用户自行承担责任。因使用本应用造成的任何损失，开发者不承担责任。</li>
+</ul>
+
+<h2>9. 隐私政策变更</h2>
+<p>本隐私政策可能根据需要进行修改。若有重要变更，将通过应用内或发布页面进行告知。变更后继续使用本应用，即视为您同意新的隐私政策。</p>
+
+<hr>
+
+<h2>10. 联系我们</h2>
+<p>如对本隐私政策有任何疑问，请通过以下方式联系我们。</p>
+<address>
+    <strong>开发者</strong>：wang xiaojing<br>
+    <strong>联系方式</strong>：<a href="mailto:appinfo_applestore@yahoo.co.jp">appinfo_applestore@yahoo.co.jp</a>
+</address>
+
+<p style="margin-top: 40px; text-align: center; color: #aaa; font-size: 0.85em;">
+    &copy; 2026 wang xiaojing. All rights reserved.
+</p>
+
+</body>
+</html>
